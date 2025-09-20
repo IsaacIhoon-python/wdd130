@@ -49,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--primary-color);
+
 }
 
 h1, h2, h3 {
@@ -72,6 +72,10 @@ h1, h2, h3 {
   justify-content: center;
 }
 
+.about-us-img{
+    width: 150px;
+}
+/*
 .hero h1 {
   align-self: center;
   background-color: rgba(0,0,0,0.5);
@@ -80,6 +84,7 @@ h1, h2, h3 {
   border-radius: 6px;
   margin-bottom: auto;
 }
+  */
 
 .hero article {
   position: absolute;
@@ -128,6 +133,6 @@ footer p {
 
 
 .socialmedia img {
-  width: 20px;
-  height: 20px;
+  width: 75px;
+
 }
