@@ -138,11 +138,10 @@ nav ul li a:hover {
 /* Footer */
 .footer {
   display: grid;
-  grid-template-columns: 3fr 1fr};
-  /justify-content: space-between;
+  grid-template-columns: 3fr 1fr;
   align-items: center;
   background: var(--primary-color);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   margin-top: 2rem;
 }
@@ -150,8 +149,6 @@ nav ul li a:hover {
 .footer .socialmedia img {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  gap: 10px;
   margin-left: auto;}
   .footer .socialmedia img {
     width: 30px;
