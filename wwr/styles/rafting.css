@@ -147,8 +147,8 @@ nav ul li a:hover {
 }
 
 .footer .socialmedia img {
-  display: flex;
-  justify-content: space-between;
+  display: flexbox;
+  justify-content: space-evenly;
   margin-left: auto;}
   .footer .socialmedia img {
     width: 30px;
