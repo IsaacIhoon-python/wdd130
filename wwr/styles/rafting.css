@@ -30,7 +30,8 @@ header, main, footer {
 
 /* Header */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   justify-content: space-between;
   background-color: var(--primary-color);
@@ -43,6 +44,7 @@ header img.logo {
 
 nav ul {
   display: flex;
+  justify-content: flex-end;
   gap: 2rem;
   list-style: none;
 }
@@ -134,15 +136,24 @@ nav ul li a:hover {
 }
 
 /* Footer */
-footer {
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr};
+  /justify-content: space-between;
+  align-items: center;
   background: var(--primary-color);
   color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 10px 20px;
   margin-top: 2rem;
 }
 
-footer .socialmedia a img {
-  width: 30px;
-  margin:0 0 0.5rem;
-}
+.footer .socialmedia img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;}
+  .footer .socialmedia img {
+    width: 30px;
+  }
+  
