@@ -1,138 +1,148 @@
 /* Root Variables */
 :root {
-  --primary-color: #0d3b66;   /* Deep blue */
-  --secondary-color: #faf0ca; /* Soft cream */
-  --accent-color: #f95738;    /* Bright orange/red */
-  --text-color: #333333;      /* Neutral dark gray */
+  --primary-color: #6a5acd;   /* purple shade */
+  --secondary-color: #f2f2f2; /* light gray background */
+  --text-color: #333333;
   --heading-font: "Georgia", serif;
   --body-font: "Arial", sans-serif;
 }
 
-/* Reset  */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: var(--body-font);
-  color: var(--primary-color);
-  background-color: #fdfdfd;
+  color: var(--text-color);
+  background-color: white;
   line-height: 1.6;
 }
-/* Layout */
 
+/* Layout Containers */
 header, main, footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Logo */
-.logo {
-    display: block;
-    margin: 0 auto 1rem;
-    max-width: 200px;
-}
-/* Navigatio */
-nav ul {
-    list-style-type: disc;
-    padding-left: 40px;
-    margin: 1rem 0;
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
 }
 
-nav ul li {
-    margin-bottom: 0.5rem;
+header img.logo {
+  max-height: 80px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
-h1, h2, h3 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-
-/* Hero Section */
-.hero {
-  position: relative;
-  background-image: url("../images/heroimage.png");
-  background-size: cover;
-  background-position: center;
-  height: 480px;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-us-img{
-    width: 150px;
-}
-/*
-.hero h1 {
-  align-self: center;
-  background-color: rgba(0,0,0,0.5);
+nav ul li a:hover {
   color: var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  margin-bottom: auto;
 }
-  */
+
+/* Hero */
+.hero {
+  background: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+}
 
 .hero article {
-  position: absolute;
-  bottom: 8%;
-  left: 5%;
-  max-width: 340px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background: white;
   padding: 1rem;
-  border-radius: 8px;
+  border: 1px solid #ccc;
   display: flex;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero article img {
-  width: 125px;
-  height: auto;
-  margin-left: 1rem;
-  border-radius: 6px;
-  flex-shrink: 0;
-  float: right;
-
+  max-width: 100px;
+  border-radius: 5px;
 }
 
-/* Sections */
-section {
-    margin-bottom: 2rem;
-    padding: 1rem 0;
-} 
+/* History Section */
+.history {
+  background: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
 
-p {
-    margin-bottom: 1rem;
+.history-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.history-content img {
+  max-width: 150px;
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Adventure Section */
+.adventure {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
+.gallery img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
-footer p {
-    margin-bottom: 1rem;
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 0.5rem;
-  width: 20px;
-  height: 20px;
-}
-
-
-.socialmedia img {
-  width: 75px;
-
+footer .socialmedia a img {
+  width: 30px;
+  margin: 0 0.5rem;
 }
