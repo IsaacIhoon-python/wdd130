@@ -137,20 +137,26 @@ nav ul li a:hover {
 
 /* Footer */
 .footer {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background: var(--primary-color);
   color: rgb(255, 255, 255);
-  padding: 10px 20px;
+  padding: 20px;
   margin-top: 2rem;
 }
 
+
+.footer .socialmedia {
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+
+}
 .footer .socialmedia img {
-  display: flexbox;
-  justify-content: space-evenly;
-  margin-left: auto;}
-  .footer .socialmedia img {
-    width: 30px;
-  }
+  width: 30px;
+}
+    
+
   
