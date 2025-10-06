@@ -1,7 +1,7 @@
 :root {
     --primary-color:#000080;
     --background-gray:#E8E8E8;
-    --soft-gray:#rgba(50,50,50 .20);
+    --soft-gray:rgba(50,50,50 0.2);
     --text-color:#3b3b3b;
 }
 
@@ -21,7 +21,7 @@ main {
     margin: 0 auto;
 }
 h1 {
-    padding-left: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
     color: var(--primary-color);
 
 }
@@ -55,7 +55,7 @@ code {
     font-size: 1.2rem;
     font-weight: bold;
 }
-input[typy="text"],
+input[type="text"],
 input[type="number"],
 textarea,
 select {
@@ -72,7 +72,7 @@ textarea {
     resize: vertical;
 }
 button[type="submit"]{
-    width: 100;
+    width: 100%;
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
