@@ -27,6 +27,7 @@
     <main>
         <!-- contact-info -->
         <section class="contact-info">
+            <h1>Contact Exciting Expedition</h1>
             <h2>Contact information</h2>
             <p><strong>Address:</strong> 123 Adventure way, Riverbend city, RC 45678</p>
             <p><strong>phone:</strong> +234 806 943 6267</p>
@@ -60,6 +61,7 @@
         <section class="Contact-form">
             <h2>Send Us a Message</h2>
             <form action="#" method="post">
+
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -68,14 +70,28 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion">website suggestion</label>
+                    <label for="inquiry">
+                        <input type="radio" id="inquiry" name="purpose" value="inquiry" required> General
+                        Inquiry</label><br>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+                        Question</label><br>
+
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">website suggestion</label>
+
                 </fieldset>
 
                 <label for="Message">Your Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <label><input type="checkbox" name="subscription"> Please subscribe me to the monthly newsletter</label>
+
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscription"> Please subscribe me to the monthly
+                    newsletter</label>
+
+
                 <button type="submit">send massage</button>
             </form>
         </section>
