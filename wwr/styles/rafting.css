@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--body-font) !important;
   color: var(--text-color);
   background-color: white;
   line-height: 1.6;
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font) !important;
   font-size: 2rem;
   color: var(--primary-color);
 }
@@ -230,7 +230,7 @@ nav ul li a:hover {
 
     .contact-form input[type="text"],
     .contact-form input[type="email"],
-    .contact-form :textarea {
+    .contact-form textarea {
       width: 100%;
       padding: 0.5rem;
       border: 1px solid #ccc;
