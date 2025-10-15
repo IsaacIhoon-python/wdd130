@@ -2,90 +2,79 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for Isaac Ihoon in WDD130 at BYU pathway">
-    <meta name="author" content="Isaac Isaac">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Exciting Expeditions, Offering thrilling, safe whitewater rafting adventures." />
+    <title>Exciting Expeditions | Home</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Isaac Ihoon | WDD 130</title>
+
 </head>
 
 <body>
     <header>
+        <img src="wwr/images/exciting-expeditions.jpg" alt="Exciting Expeditions Logo" class="logo" />
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Site</a>
-            <a href="https://www.linkedin.com/in/ihoon-a-isaac">Linkedin Profile</a>
-            <a href="https://www.facebook.com/share/1CxmUsHkmN/">Facebook Profile</a>
-            <a href="https://github.com/IsaacIhoon-python"> Github Profile</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a>
+                <li>
+            </ul>
         </nav>
     </header>
 
-    <div class="grid">
-        <main>
-            <h1>Isaac Ihoon | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Isaac Ihoon" width="200">
-            <p>
-                Hello! My name is Isaac Ihoon, and I am a passionate tech enthusiast from Abuja, Nigeria. I specialize
-                in
-                developing
-                websites and mobile applications, with a strong focus on creating innovative and user-friendly digital
-                solutions. My
-                journey into technology began at an early age, and over the years, I have nurtured this passion into
-                practical skills
-                that allow me to design, build, and deliver impactful projects.
+    <main>
+        <section class="hero">
+            <img src="wwr/images/heroimage.png" alt="Rafting Adventure on River" />
+            <div class="hero-text">
+                <h1>Ride the Rapids of Adventure</h1>
+                <p>Join us for unforgettable Water Expedition Experinces - safe, thrilling, and guided.</p>
+                <a href="trips.html">Explore Trips</a>
+            </div>
+        </section>
 
-                I am deeply committed to contributing to the growth of the tech industry by bringing fresh ideas,
-                creativity, and
-                problem-solving approaches. My goal is to redefine how technology is experienced and to play an active
-                role
-                in shaping
-                its future. With every project I undertake, I strive to add value, push boundaries, and create solutions
-                that inspire
-                and empower people.
+        <section class="features">
+            <div class="feature">
+                <img src="wwr/images/adventure-01.jpg" alt="River view and rapids">
+                <h2>Expert Guildes</h2>
+                <p>Our experienced guides ensure every trip is both exciting and safe.</p>
+            </div>
 
-            </p>
-            <ul class="box">
-                <li>
-                    <a href="https://www.churchofjesuschrist.org/temples/details/abidjan-ivory-coast-temple?lang=eng"
-                        target="_blank">Abijan-Ivory-Cost Temple</a>
-                </li>
-                <li>
-                    <a href="https://churchofjesuschristtemples.org/accra-ghana-temple/"
-                        target="_blank">Accra-Ghana-Temple</a>
-                </li>
-                <li>
-                    <a href="https://www.churchofjesuschrist.org/temples/details/aba-nigeria-temple?lang=eng"
-                        target="_blank">
-                        Aba Nigeria Temple</a>
-                </li>
-            </ul>
-        </main>
-        <aside class="box">
-            <h2>Nigeria</h2>
-            <img src="images/nigerian-flag.jpg" alt="Flag of Nigeria" width="150">
-            <p>
-                Nigeria is my home country, located in West Africa. It is widely recognized for its rich history,
-                vibrant
-                traditions,
-                and cultural diversity. With over 250 ethnic groups and hundreds of languages, Nigeria stands out as a
-                land
-                full of
-                unique customs, festivals, and artistic expressions that reflect its unity in diversity.
+            <div class="feature">
+                <img src="wwr/images/adventure-02.jpg" alt="River view and rapids">
+                <h2>scenic River</h2>
+                <p>We choose routes with breathtaking views and varying difficulty levels.</p>
+            </div>
 
-                Proudly known as the "Giant of Africa," Nigeria also leads the way in many areas such as music, film,
-                sports, and the
-                growing tech industry. This blend of cultural strength and innovation makes Nigeria not only a
-                powerhouse on
-                the
-                continent but also a country with a strong influence on the global stage.
+            <div class="feature">
+                <img src="wwr/images/adventure-03.jpg" alt="Group rafting">
+                <h2>Group Packages</h2>
+                <p>Ideal for families, friends, or corporate adventures - book your group today.</p>
+            </div>
+        </section>
 
-            </p>
-        </aside>
-    </div>
+        <section class="newsletter">
+            <h2>stay connected</h2>
+            <form action="#" method="post">
+                <label for="newsletter-name">Name:</label>
+                <input type="text" id="newsletter-name" name="name" required>
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="name" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2025 | Isaac Ihoon | Abuja, Nigeria</p>
+    <footer class="footer">
+        <p>&copy; 2025 Exciting Expeditions. All rights reserved. | Isaac Ihoon</p>
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/ihoon-a-isaac"><img src="wwr/images/linkedin.svg"
+                    alt="linkedin Profile"></a>
+            <a href="https://www.facebook.com/share/1CxmUsHkmN/"><img src="wwr/images/facebook.svg"
+                    alt="Facebook Profile"></a>
+            <a href="https://youtube.com/@IhoonIsaac"><img src="wwr/images/youtube.svg" alt="Youtube Profile"></a>
+        </nav>
     </footer>
 </body>
 
