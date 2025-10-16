@@ -1,14 +1,15 @@
-/* Root Variables */
+
+/* === Root Variables === */
 :root {
-  --primary-color: #6a5acd;
-  --secondary-color: #f2f2f2;
+  --primary-color: #6a5acd; /* Deep purple */
+  --secondary-color: #f2f2f2; /* Light gray */
   --text-color: #333333;
   --heading-font: "Georgia", serif;
   --body-font: "Arial", sans-serif;
   --link-hover-color: #5848c2;
 }
 
-/* Reset */
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -22,14 +23,14 @@ body {
   line-height: 1.6;
 }
 
-/* Layout containers */
+/* === Layout Containers === */
 header, main, footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Header & Navigation */
+/* === Header & Navigation === */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -62,7 +63,7 @@ nav ul li a.active {
   color: var(--secondary-color);
 }
 
-/* Hero Section */
+/* === Hero Section === */
 .hero {
   position: relative;
   width: 100%;
@@ -112,7 +113,7 @@ nav ul li a.active {
   background-color: var(--link-hover-color);
 }
 
-/* Features Section */
+/* === Features Section === */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -145,7 +146,7 @@ nav ul li a.active {
   font-size: 0.9rem;
 }
 
-/* Newsletter Section */
+/* === Newsletter Section === */
 .newsletter {
   background: var(--secondary-color);
   padding: 2rem;
@@ -186,7 +187,216 @@ nav ul li a.active {
   background: var(--link-hover-color);
 }
 
-/* Footer */
+/* === Trips Section === */
+.trip-list {
+  padding: 2rem 0;
+}
+
+.trip-list h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+.trip-list .trip {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.trip-list .trip img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.trip-list .trip h2 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* === Trip Table === */
+.trip-table {
+  padding: 2rem 0;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: var(--secondary-color);
+}
+
+/* === Trip Call-To-Action === */
+.trip-cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.trip-cta a {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.trip-cta a:hover {
+  background-color: var(--link-hover-color);
+}
+
+/* ================================
+   CONTACT PAGE STYLES
+   ================================ */
+
+/* === Contact Info === */
+.contact-info {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-info h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+/* === Map + Form Layout === */
+.middle-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* === Contact Form === */
+.contact-form {
+  background: var(--secondary-color);
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+}
+
+.contact-form fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--link-hover-color);
+}
+
+/* === Employees Section === */
+.employees {
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 2rem 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.employees h2 {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  object-fit: cover;
+}
+
+.employees figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* === Footer === */
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +419,7 @@ nav ul li a.active {
   height: 24px;
 }
 
-/* Responsive adjustments */
+/* === Responsive Design === */
 @media (max-width: 768px) {
   .features {
     grid-template-columns: 1fr;
@@ -221,5 +431,13 @@ nav ul li a.active {
 
   .newsletter form {
     grid-template-columns: 1fr;
+  }
+
+  .middle-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .employees {
+    flex-direction: column;
   }
 }
