@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Explore rafting trips offered by Exciting Expeditions and reserve your adventure." />
+        content="Explore exciting rafting trips with Exciting Expeditions — from family-friendly floats to multi-day wilderness adventures." />
     <title>Exciting Expeditions | Trips</title>
     <link rel="stylesheet" href="styles/rafting.css" />
 </head>
@@ -15,20 +15,21 @@
         <img src="images/exciting-expeditions.jpg" alt="Exciting Expeditions Logo" class="logo" />
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html" class="active">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="about.html" title="About Exciting Expeditions">About Us</a></li>
+                <li><a href="trips.html" class="active" title="Rafting Trips">Trips</a></li>
+                <li><a href="contact.html" title="Contact Page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Trip List -->
         <section class="trip-list">
             <h1>Our Rafting Trips</h1>
 
             <div class="trip">
-                <img src="images/trip1.jpg" alt="River Trail Trip">
+                <img src="images/trip1.jpg" alt="Guests rafting the River Trail — family-friendly adventure">
                 <div class="trip-info">
                     <h2>River Trail Trip</h2>
                     <p>A gentle half-day rafting experience perfect for families and beginners. Enjoy calm waters,
@@ -37,33 +38,35 @@
             </div>
 
             <div class="trip">
-                <img src="images/trip2.jpg" alt="White Water Challenge">
+                <img src="images/trip2.jpg" alt="Team navigating rapids during the White Water Challenge">
                 <div class="trip-info">
                     <h2>White Water Challenge</h2>
-                    <p>An adrenaline-pumping full-day adventure with more challenging rapids, ideal for intermediate
-                        rafters.</p>
+                    <p>An adrenaline-pumping full-day adventure featuring moderate rapids — ideal for intermediate
+                        rafters seeking excitement.</p>
                 </div>
             </div>
 
             <div class="trip">
-                <img src="images/trip3.jpg" alt="Multi-Day Expedition">
+                <img src="images/trip3.jpg" alt="Rafting group camping along the river during Multi-Day Expedition">
                 <div class="trip-info">
                     <h2>Multi-Day Expedition</h2>
-                    <p>A multi-day trip combining rugged rapids, camping along the riverbanks, and immersive wilderness
-                        experience.</p>
+                    <p>A thrilling multi-day journey combining rugged rapids, camping on the riverbanks, and an
+                        immersive wilderness experience.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Trip Pricing Table -->
         <section class="trip-table">
             <h2>Trip Options & Pricing</h2>
             <table>
+                <caption>Available rafting adventures with duration, difficulty, and pricing.</caption>
                 <thead>
                     <tr>
-                        <th>Trip Name</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price</th>
+                        <th scope="col">Trip Name</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Difficulty</th>
+                        <th scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,19 +92,20 @@
             </table>
         </section>
 
+        <!-- Call to Action -->
         <section class="trip-cta">
             <h2>Ready to Book?</h2>
-            <p>Contact us to reserve your spot today.</p>
+            <p>Contact us now to reserve your spot and start your next adventure!</p>
             <a href="contact.html">Contact Us</a>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Exciting Expeditions. All rights reserved. | Isaac Ihoon</p>
+        <p>&copy; 2025 Exciting Expeditions. All rights reserved. | Designed by Isaac Ihoon</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Profile"></a>
-            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Profile"></a>
-            <a href="https://youtube.com"><img src="images/youtube.svg" alt="YouTube Profile"></a>
+            <a href="https://facebook.com" title="Facebook Profile"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com" title="LinkedIn Profile"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://youtube.com" title="YouTube Channel"><img src="images/youtube.svg" alt="YouTube"></a>
         </nav>
     </footer>
 </body>

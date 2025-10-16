@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="contact Exciting Expeditions for inquiries, bookings, or fedback." />
+    <meta name="description"
+        content="Contact Exciting Expeditions for inquiries, bookings, or feedback about our rafting adventures." />
     <title>Exciting Expeditions | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css" />
 </head>
@@ -14,27 +15,23 @@
         <img src="images/exciting-expeditions.jpg" alt="Exciting Expeditions Logo" class="logo" />
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="about.html" title="About Exciting Expeditions">About Us</a></li>
+                <li><a href="trips.html" title="Rafting Trips">Trips</a></li>
+                <li><a href="contact.html" class="active" title="Contact Us">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- contact-info -->
+        <!-- Contact Info Section -->
         <section class="contact-wrapper">
             <div class="contact-info">
                 <h1>Contact Exciting Expeditions</h1>
-                <h2>Contact information</h2>
-                <p><strong>Address:</strong> 123 Adventure way, Riverbend city, RC 45678</p>
-                <p><strong>phone:</strong> +234 806 943 6267</p>
+                <h2>Get in Touch</h2>
+                <p><strong>Address:</strong> 123 Adventure Way, Riverbend City, RC 45678</p>
+                <p><strong>Phone:</strong> +234 806 943 6267</p>
                 <p><strong>Email:</strong> info@excitingexpeditions.com</p>
-            </div>
-            <div class="contact-grid">
-                <div class="map"></div>
-                <section class="contact-form"></section>
             </div>
 
             <div class="middle-wrapper">
@@ -46,10 +43,9 @@
                     </iframe>
                 </div>
 
-                <!-- Section Contact-form </-->
-
+                <!-- Contact Form Section -->
                 <div class="contact-form">
-                    <h2>Send us a Message</h2>
+                    <h2>Send Us a Message</h2>
                     <form action="#" method="post">
                         <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -59,60 +55,51 @@
 
                         <fieldset>
                             <legend>Purpose of Message:</legend>
-                            <label><input type="radio" name="purpose" value="inquiry" required />
-                                General Inquiry</label><br />
-                            <label><input type="radio" name="purpose" value="reservation" /> Reservation
-                                Question</label><br />
-                            <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
-                            <input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+                            <label><input type="radio" name="purpose" value="inquiry" required> General
+                                Inquiry</label><br>
+                            <label><input type="radio" name="purpose" value="reservation"> Reservation
+                                Question</label><br>
+                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
                         </fieldset>
 
                         <label for="message">Your Message:</label>
                         <textarea id="message" name="message" required></textarea>
 
-
                         <label for="subscribe">
-                            <input type="checkbox" id="subscribe" name="subscription"> Please subscribe me to the
-                            monthly
-                            newsletter</label>
+                            <input type="checkbox" id="subscribe" name="subscription">
+                            Please subscribe me to the monthly newsletter
+                        </label>
 
-
-                        <button type="submit">send massage</button>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
-            <div class="contact-grid">
-                <div class="map"></div>
-                <section class="contact-form"></section>
-            </div>
+        </section>
+
+        <!-- Employees Section -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.webp" alt="Portrait of John Moon, Lead Guide">
+                <figcaption>John Moon — Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.webp" alt="Portrait of Sandra Brown, Sales Representative">
+                <figcaption>Sandra Brown — Sales Representative</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.webp" alt="Portrait of Dani Lushan, Head of Operations">
+                <figcaption>Dani Lushan — Head of Operations</figcaption>
+            </figure>
         </section>
     </main>
 
-    <section class=" employees">
-        <h2>Meet our Team</h2>
-        <figure>
-            <img src="images/employee1.webp" alt="John Moon - Lead Guide">
-            <figcaption>Jonh Moon - Lead Guild</figcaption>
-        </figure>
-        <figure>
-            <img src="images/employee2.webp" alt="Sandra Brown - Sales Rep">
-            <figcaption>Sandra Brown - Sales Rep</figcaption>
-        </figure>
-        <figure>
-            <img src="images/employee3.webp" alt="Dani Lushan - Operations">
-            <figcaption>Dani Lushan - Operations</figcaption>
-        </figure>
-    </section>
-
-
-
-
     <footer class="footer">
-        <p>&copy; 2025 Exciting Expeditions. All rights reserved. | Isaac Ihoon</p>
+        <p>&copy; 2025 Exciting Expeditions. All rights reserved. | Designed by Isaac Ihoon</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Profile"></a>
-            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Profile"></a>
-            <a href="https://youtube.com"><img src="images/youtube.svg" alt="YouTube Profile"></a>
+            <a href="https://facebook.com" title="Facebook Profile"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com" title="LinkedIn Profile"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://youtube.com" title="YouTube Channel"><img src="images/youtube.svg" alt="YouTube"></a>
         </nav>
     </footer>
 </body>
